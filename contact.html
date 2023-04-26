@@ -134,87 +134,36 @@
                         <h2 class="contact-title">Get in Touch</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="https://api.web3forms.com/submit" method="POST" id="contactForm" novalidate="novalidate">
+                        <form class="form-contact contact_form" action="https://api.web3forms.com/submit" method="POST">
                             <input type="hidden" name="access_key" value="e8969a87-ddac-4ab0-95a7-e094e48854f3">
+                            <input type="hidden" name="Contact Form:" value="Njuguna Wahome Consulting Website">
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-sm-6">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
+                                        <input class="form-control valid" name="name" id="name" type="text" placeholder="Enter your name" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                        <input class="form-control valid" name="email" id="email" type="email" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+                                        <input class="form-control" name="subject" id="subject" type="text" placeholder="Enter Subject" required>
                                     </div>
                                 </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" placeholder=" Enter Message" required></textarea>
+                                    </div>
+                                </div>
+                                
                             </div>
-                            <input class="hidden" name="redirect" value="https://web3forms.com/success">
+                            <input class="hidden" name="redirect" style="display: none;" value="https://web3forms.com/success">
                             <div class="form-group mt-3">
                                 <button type="submit" class="button button-contactForm boxed-btn">Send</button>
                             </div>
-                        </form>
-
-                        <form action="https://api.web3forms.com/submit" method="POST">
-
-                            <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
-                            <!-- Create your Access key here: https://web3forms.com/ -->
-                            <!-- <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE"> -->
-                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                        
-                            <!-- Optional: Can be type="hidden" or type="text" for subject -->
-                            <input type="hidden" name="subject" value="New Submission from Web3Forms">
-                          
-                            <!-- Optional: From Name you want to see in the email
-                                  Default is "Notifications". you can overwrite here -->
-                            <input type="hidden" name="from_name" value="Your Website Name">
-                          
-                            <!-- Optional: To send the form submission as CC email -->
-                            <input type="hidden" name="ccemail" value="partner@example.com">
-                        
-                            <!-- Optional: default replyto will be "email" (if available), 
-                                 you may overwrite here -->
-                            <input type="hidden" name="replyto" value="customer@example.com">
-                        
-                            <!-- Required: if submitting without Javascript 
-                                 (because by default web3form outputs json) -->
-                        
-                            <!-- If javascript, use "window.location.hash" for redirects -->
-                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                        
-                            <!-- Optional: But Recommended: To Prevent SPAM Submission. 
-                                 Make sure its hidden by default -->
-                            <input type="checkbox" name="botcheck" id="" style="display: none;">
-                            
-                            <!-- Webhooks: Send your form data to Notion, Google Sheets or Zapier.
-                                 This feature available to PRO & Starter Plan users only -->
-                            <input type="hidden" name="webhook" value="WEBHOOK_URL_HERE" />
-                        
-                            <!-- Google reCaptcha v3: To Prevent SPAM Submission.PRO Plan only -->
-                            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-                            
-                            <!-- Attachments: Make sure the <form> has enctype="multipart/form-data"
-                                 This feature available to PRO Plan users only -->
-                            <input type="file" name="attachment" />
-                        
-                            <!-- Custom Form Data: 
-                             Then you can include your own form data you wish to receive in email. -->
-                            <input type="email" name="email" required>
-                            <input type="text" name="First Name" required>
-                            <input type="text" name="Phone Number" required>
-                            <textarea name="message" cols="30" rows="10" required></textarea>
-                        
-                            <button type="submit">Submit Form</button>
-                        
                         </form>
                     </div>
                     <div class="col-lg-3 offset-lg-1">
